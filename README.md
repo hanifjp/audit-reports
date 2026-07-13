@@ -60,7 +60,7 @@ Validate correct usage of `seeds`, `bump`, `authority`, `close`, and `has_one` c
 | 🔍 **Spot Audit** | $150 USDC | 24-48 hours | Quick security check before launch |
 | 📋 **Full Audit** | $500 USDC | 3-5 days | Comprehensive audit with full report |
 | 🚨 **Emergency Audit** | $300 USDC | 6-12 hours | Urgent audit for imminent launch |
-| 💬 **Consultation** | $75 USDC/session | 1 hour | Security advice & code review |
+| 💬 **Deep-Dive Consultation Report** | $75 USDC | 24-hour turnaround" |
 
 > 💡 **Compare:** Certik charges $50,000+. We deliver enterprise-grade quality at a fraction of the cost.
 
