@@ -80,7 +80,7 @@ Every Hafiz Labs audit report includes:
 
 ## 🚀 How to Order
 
-1. **Contact us** via Telegram: [@CadraSecurity](https://t.me/CadraSecurity) *(coming soon)*
+1. **Contact us** via Telegram: [@HafizLabs](https://t.me/HafizLabs) *(coming soon)*
 2. **Share your repository** or paste your smart contract code
 3. **Choose your package** (Spot / Full / Emergency)
 4. **Pay via USDC** on Solana
