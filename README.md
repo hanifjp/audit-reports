@@ -30,7 +30,6 @@
 | Report ID | Project | Chain | Verdict | Severity | Date |
 |-----------|---------|-------|---------|----------|------|
 | [CSA-20260711-832](./CSA-20260711-832-anchor-escrow.md) | Anchor Escrow | Solana | ⚠️ CONDITIONAL | HIGH | Jul 11, 2026 |
-| [CSA-20260711-109](./CSA-20260711-109-smart-contract-audit.md) | Smart Contract Audit | Solana | ❌ NOT SAFE | HIGH | Jul 11, 2026 |
 | [CSA-20260711-167](./CSA-20260711-167-smart-contract-audit.md) | DeFi Security Audit | Solana | ❌ NOT SAFE | HIGH | Jul 11, 2026 |
 
 ---
