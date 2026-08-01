@@ -1,23 +1,23 @@
-# 🛡️ Cadra Security — Smart Contract Audit Reports
+# 🛡️ Hafiz Labs — Smart Contract Audit Reports
 
 > **AI-Powered Smart Contract Security for Solana & Ethereum**
-> Powered by PAPERCLIP AI Corporation
+> AI-Powered Security Analysis
 
 [![Audits](https://img.shields.io/badge/Audits-3%2B-brightgreen)](https://github.com/hanifjp/audit-reports)
 [![Chain](https://img.shields.io/badge/Chain-Solana%20%7C%20Ethereum-blue)](https://github.com/hanifjp/audit-reports)
-[![Powered by](https://img.shields.io/badge/Powered%20by-PAPERCLIP%20AI-cyan)](https://github.com/hanifjp/audit-reports)
+[![Powered by](https://img.shields.io/badge/Powered%20by-AI-cyan)](https://github.com/hanifjp/audit-reports)
 
 ---
 
-## 🏢 About Cadra Security
+## 🏢 About Hafiz Labs
 
-**Cadra Security** is a Web3 security firm specializing in smart contract audits for **Solana** and **Ethereum** ecosystems. Our audits are powered by **PAPERCLIP AI** — a multi-agent system that combines deep AI analysis with human expert verification.
+**Hafiz Labs** is a Web3 security firm specializing in smart contract audits for **Solana** and **Ethereum** ecosystems. Our audits are powered by **AI** — a multi-agent system that combines deep AI analysis with human expert verification.
 
-### Why Cadra Security?
+### Why Hafiz Labs?
 
 | Feature | Details |
 |---------|---------|
-| 🤖 **AI-Powered** | Multi-agent PAPERCLIP system for deep code analysis |
+| 🤖 **AI-Powered** | Multi-agent AI system for deep code analysis |
 | 👁️ **Human-Verified** | Every finding reviewed by security experts |
 | ⚡ **Fast Delivery** | Spot audit in 24-48 hours, Full audit in 3-5 days |
 | 💰 **Competitive Pricing** | Enterprise quality at freelancer price |
@@ -68,7 +68,7 @@ Validate correct usage of `seeds`, `bump`, `authority`, `close`, and `has_one` c
 
 ## 📊 Report Format
 
-Every Cadra Security audit report includes:
+Every Hafiz Labs audit report includes:
 
 - ✅ **Executive Summary** — Professional security assessment
 - ✅ **Vulnerability Table** — ID, Severity, Location, Description
@@ -111,10 +111,10 @@ Every Cadra Security audit report includes:
 
 ## ⚠️ Disclaimer
 
-Cadra Security audit reports are not a guarantee of security. Smart contracts may contain vulnerabilities that were not identified during the audit. Always follow security best practices and consider multiple audits for high-value protocols.
+Hafiz Labs audit reports are not a guarantee of security. Smart contracts may contain vulnerabilities that were not identified during the audit. Always follow security best practices and consider multiple audits for high-value protocols.
 
 ---
 
-*© 2026 Cadra Security | PAPERCLIP AI Corporation. All rights reserved.*
+*© 2026 Hafiz Labs. All rights reserved.*
 
 > 🔒 All reports are confidential and provided for the benefit of the Web3 community for educational purposes.
