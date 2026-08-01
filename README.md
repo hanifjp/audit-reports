@@ -3,7 +3,7 @@
 > **AI-Powered Smart Contract Security for Solana**
 > AI-Powered Security Analysis
 
-[![Audits](https://img.shields.io/badge/Audits-3%2B-brightgreen)](https://github.com/hanifjp/audit-reports)
+[![Audits](https://img.shields.io/badge/Audits-2%2B-brightgreen)](https://github.com/hanifjp/audit-reports)
 [![Chain](https://img.shields.io/badge/Chain-Solana-blue)](https://github.com/hanifjp/audit-reports)
 [![Powered by](https://img.shields.io/badge/Powered%20by-AI-cyan)](https://github.com/hanifjp/audit-reports)
 
