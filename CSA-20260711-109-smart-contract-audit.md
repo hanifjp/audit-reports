@@ -9,7 +9,7 @@ ai_score: 42
 kc_rating: "Bronze"
 github_url: "N/A"
 portfolio: true
-tags: [portfolio, audit, cadra-security, solana]
+tags: [portfolio, audit, hafiz-labs, solana]
 ---
 
 # 🔬 CSA-20260711-109
