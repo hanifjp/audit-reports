@@ -10,7 +10,7 @@ ai_score: 78
 kc_rating: "Silver"
 github_url: "https://github.com/coral-xyz/anchor-escrow"
 portfolio: true
-tags: [portfolio, audit, cadra-security, solana]
+tags: [portfolio, audit, hafiz-labs, solana]
 ---
 
 # 🔬 CSA-20260711-832
