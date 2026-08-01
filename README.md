@@ -1,17 +1,17 @@
 # 🛡️ Hafiz Labs — Smart Contract Audit Reports
 
-> **AI-Powered Smart Contract Security for Solana & Ethereum**
+> **AI-Powered Smart Contract Security for Solana**
 > AI-Powered Security Analysis
 
 [![Audits](https://img.shields.io/badge/Audits-3%2B-brightgreen)](https://github.com/hanifjp/audit-reports)
-[![Chain](https://img.shields.io/badge/Chain-Solana%20%7C%20Ethereum-blue)](https://github.com/hanifjp/audit-reports)
+[![Chain](https://img.shields.io/badge/Chain-Solana-blue)](https://github.com/hanifjp/audit-reports)
 [![Powered by](https://img.shields.io/badge/Powered%20by-AI-cyan)](https://github.com/hanifjp/audit-reports)
 
 ---
 
 ## 🏢 About Hafiz Labs
 
-**Hafiz Labs** is a Web3 security firm specializing in smart contract audits for **Solana** and **Ethereum** ecosystems. Our audits are powered by **AI** — a multi-agent system that combines deep AI analysis with human expert verification.
+**Hafiz Labs** is a Web3 security firm specializing in smart contract audits for the **Solana** ecosystem. Our audits are powered by **AI** — a multi-agent system that combines deep AI analysis with human expert verification.
 
 ### Why Hafiz Labs?
 
