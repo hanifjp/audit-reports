@@ -1,0 +1,476 @@
+%PDF-1.4
+%ту╧╙
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 6 0 R 8 0 R 10 0 R 12 0 R ] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 5685 >>
+stream
+0 0 0 rg
+BT /F2 20 Tf 1 0 0 1 50.00 771.89 Tm (Security Audit Report Ч Hafiz Labs) Tj ET
+0 0 0 rg
+BT /F2 10 Tf 1 0 0 1 50.00 751.89 Tm (Report ID:  ) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 122.00 751.89 Tm (AUD-1786800001) Tj ET
+0 0 0 rg
+BT /F2 10 Tf 1 0 0 1 50.00 738.89 Tm (Project:  ) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 110.00 738.89 Tm (RustFund Ч Sample Crowdfunding Program) Tj ET
+0 0 0 rg
+BT /F2 10 Tf 1 0 0 1 50.00 725.89 Tm (Client:  ) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 104.00 725.89 Tm (Demonstration \(synthetic contract\)) Tj ET
+0 0 0 rg
+BT /F2 10 Tf 1 0 0 1 50.00 712.89 Tm (Date:  ) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 92.00 712.89 Tm (2026-08-15) Tj ET
+0 0 0 rg
+BT /F2 10 Tf 1 0 0 1 50.00 699.89 Tm (Verdict:  ) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 110.00 699.89 Tm (NOT SAFE | Risk: CRITICAL) Tj ET
+0 0 0 rg
+BT /F2 10 Tf 1 0 0 1 50.00 686.89 Tm (Overall CVSS:  ) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 140.00 686.89 Tm (9.6 \(Critical\)) Tj ET
+0 0 0 rg
+BT /F2 10 Tf 1 0 0 1 50.00 673.89 Tm (Findings:  ) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 116.00 673.89 Tm (4 Ч Critical 2, High 1, Medium 1, Low 0) Tj ET
+0 0 0 rg
+BT /F2 14 Tf 1 0 0 1 50.00 646.89 Tm (Executive Summary) Tj ET
+0.8 0.8 0.8 RG 0.7 w
+50.00 642.89 m 545.28 642.89 l S
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 622.89 Tm (RustFund is a Solana/Anchor crowdfunding program that lets contributors fund a campaign) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 609.89 Tm (toward a goal. The review found that the campaign creator can drain all contributed) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 596.89 Tm (lamports at any time Ч before the goal is reached and without contributor consent Ч) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 583.89 Tm (because the withdrawal path manipulates account lamports directly and enforces no goal) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 570.89 Tm (or deadline check. The program also keeps no per-contributor record, so refunds are) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 557.89 Tm (impossible if a campaign fails. Combined, these issues place all contributed funds at) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 544.89 Tm (immediate risk. Remediation requires goal/deadline enforcement, per-contributor) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 531.89 Tm (accounting, and a checks-effects-interactions ordering around any transfer.) Tj ET
+0 0 0 rg
+BT /F2 14 Tf 1 0 0 1 50.00 505.89 Tm (Recommended Fix Order) Tj ET
+0.8 0.8 0.8 RG 0.7 w
+50.00 501.89 m 545.28 501.89 l S
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 481.89 Tm (1. [Critical] Direct Lamport Manipulation Enables Fund Drain -> Fix immediately \(24-48h\)) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 468.89 Tm (2. [Critical] Missing Per-Contributor Accounting -> Fix immediately \(24-48h\)) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 455.89 Tm (3. [High] No Goal or Deadline Enforcement on Withdrawal -> Fix within 3-5 days) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 442.89 Tm (4. [Medium] Checks-Effects-Interactions Violation Around Transfer -> Fix within 1-2) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 429.89 Tm (weeks) Tj ET
+0 0 0 rg
+BT /F2 12 Tf 1 0 0 1 50.00 407.89 Tm (Scope) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 391.89 Tm (programs/fund/src/lib.rs \(contribute, withdraw, refund\)) Tj ET
+0 0 0 rg
+BT /F2 14 Tf 1 0 0 1 50.00 365.89 Tm (Finding V-01 Ч Direct Lamport Manipulation Enables Fund Drain) Tj ET
+0.8 0.8 0.8 RG 0.7 w
+50.00 361.89 m 545.28 361.89 l S
+0.75 0.1 0.1 rg
+BT /F2 11 Tf 1 0 0 1 50.00 340.89 Tm (CVSS 9.6 \(Critical\) Ч CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H) Tj ET
+0 0 0 rg
+BT /F2 10 Tf 1 0 0 1 50.00 326.89 Tm (Location:  ) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 116.00 326.89 Tm (withdraw\(\) \(L48-56\)) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 313.89 Tm (withdraw\(\) decrements the fund account lamports directly and credits the creator with no) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 300.89 Tm (check that the funding goal was met. The creator can call it at any time and take the) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 287.89 Tm (entire balance.) Tj ET
+0 0 0 rg
+BT /F2 12 Tf 1 0 0 1 50.00 265.89 Tm (Vulnerable Code) Tj ET
+0.96 0.96 0.965 rg
+50.00 181.89 495.28 78.00 re f
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 248.09 Tm (pub fn withdraw\(ctx: Context<Withdraw>\) -> Result<\(\)> {) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 238.09 Tm (    let amount = ctx.accounts.fund.total_raised;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 228.09 Tm (    // direct lamport manipulation, no goal/authority gating) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 218.09 Tm (    **ctx.accounts.fund.to_account_info\(\).try_borrow_mut_lamports\(\)? -= amount;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 208.09 Tm (    **ctx.accounts.creator.to_account_info\(\).try_borrow_mut_lamports\(\)? += amount;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 198.09 Tm (    Ok\(\(\)\)) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 188.09 Tm (}) Tj ET
+0 0 0 rg
+BT /F2 12 Tf 1 0 0 1 50.00 161.89 Tm (Exploit Walkthrough) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 145.89 Tm (Attack Steps:) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 129.89 Tm (1. A campaign is created and receives contributions from several users.) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 113.89 Tm (2. Before the goal or deadline is reached, the creator calls withdraw\(\).) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 97.89 Tm (3. The full contributed balance is transferred to the creator.) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 81.89 Tm (4. Contributors have no on-chain record and cannot recover their funds.) Tj ET
+0 0 0 rg
+BT /F2 12 Tf 1 0 0 1 50.00 59.89 Tm (PoC Execution Proof) Tj ET
+
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 6334 >>
+stream
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 781.89 Tm (Validator status: INCOMPLETE_SOURCE ╖ 2026-08-16 09:00:52 UTC) Tj ET
+0.96 0.96 0.965 rg
+50.00 617.89 495.28 158.00 re f
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 764.09 Tm ($ cargo build-sbf) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 754.09 Tm (   Compiling poc v0.1.0) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 744.09 Tm (error[E0433]: failed to resolve: use of undeclared crate or module `anchor_lang`) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 734.09 Tm ( --> programs/poc/src/lib.rs:1:5) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 724.09 Tm (  |) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 714.09 Tm (1 | use anchor_lang::prelude::*;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 704.09 Tm (  |     ^^^^^^^^^^^ use of undeclared crate or module `anchor_lang`) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 694.09 Tm (  |) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 684.09 Tm (  = note: `anchor_lang` and the program crate dependencies are declared in Cargo.toml,) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 674.09 Tm (          which is not part of the submitted snippet.) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 664.09 Tm () Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 654.09 Tm (error: could not compile `poc` \(lib\) due to previous error) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 644.09 Tm () Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 634.09 Tm (note: the submitted snippet requires the full project context \(Cargo.toml,) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 624.09 Tm (      complete account structs\) to build; it cannot be compiled standalone.) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 603.89 Tm (The raw validator execution log above is shown verbatim rather than a narrated or) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 590.89 Tm (assumed proof.) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 574.89 Tm (Why not proven: automated build requires the full project context \(Cargo.toml, complete) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 561.89 Tm (account structs\); the submitted snippet alone cannot be compiled standalone.) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 545.89 Tm (Impact still valid: this does not affect the validity of the code-level finding above Ч) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 532.89 Tm (the vulnerability pattern is confirmed by static analysis regardless of PoC automation) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 519.89 Tm (status.) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 503.89 Tm (Next steps: recommend manual proof-of-concept testing on a devnet deployment with the) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 490.89 Tm (full source.) Tj ET
+0 0 0 rg
+BT /F2 12 Tf 1 0 0 1 50.00 468.89 Tm (Remediation \(Fixed Code\)) Tj ET
+0.96 0.96 0.965 rg
+50.00 344.89 495.28 118.00 re f
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 451.09 Tm (pub fn withdraw\(ctx: Context<Withdraw>\) -> Result<\(\)> {) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 441.09 Tm (    let fund = &ctx.accounts.fund;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 431.09 Tm (    require!\(fund.total_raised >= fund.goal, FundError::GoalNotMet\);) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 421.09 Tm (    require!\(Clock::get\(\)?.unix_timestamp >= fund.deadline, FundError::CampaignActive\);) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 411.09 Tm (    require_keys_eq!\(fund.creator, ctx.accounts.creator.key\(\), FundError::Unauthorized\);) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 401.09 Tm (    let amount = fund.total_raised;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 391.09 Tm (    // move funds via a checked transfer AFTER state checks) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 381.09 Tm (    **ctx.accounts.fund.to_account_info\(\).try_borrow_mut_lamports\(\)? -= amount;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 371.09 Tm (    **ctx.accounts.creator.to_account_info\(\).try_borrow_mut_lamports\(\)? += amount;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 361.09 Tm (    Ok\(\(\)\)) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 351.09 Tm (}) Tj ET
+0 0 0 rg
+BT /F2 14 Tf 1 0 0 1 50.00 314.89 Tm (Finding V-02 Ч Missing Per-Contributor Accounting) Tj ET
+0.8 0.8 0.8 RG 0.7 w
+50.00 310.89 m 545.28 310.89 l S
+0.75 0.1 0.1 rg
+BT /F2 11 Tf 1 0 0 1 50.00 289.89 Tm (CVSS 9.1 \(Critical\) Ч CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N) Tj ET
+0 0 0 rg
+BT /F2 10 Tf 1 0 0 1 50.00 275.89 Tm (Location:  ) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 116.00 275.89 Tm (contribute\(\) \(L30-37\)) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 262.89 Tm (contribute\(\) only increments an aggregate total. No per-contributor record is written,) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 249.89 Tm (so the program cannot attribute funds or process refunds if the campaign fails.) Tj ET
+0 0 0 rg
+BT /F2 12 Tf 1 0 0 1 50.00 227.89 Tm (Vulnerable Code) Tj ET
+0.96 0.96 0.965 rg
+50.00 173.89 495.28 48.00 re f
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 210.09 Tm (pub fn contribute\(ctx: Context<Contribute>, amount: u64\) -> Result<\(\)> {) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 200.09 Tm (    ctx.accounts.fund.total_raised += amount; // aggregate only, no attribution) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 190.09 Tm (    Ok\(\(\)\)) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 180.09 Tm (}) Tj ET
+0 0 0 rg
+BT /F2 12 Tf 1 0 0 1 50.00 153.89 Tm (PoC Execution Proof) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 137.89 Tm (No validator execution record is available for this finding; a proof-of-concept was not) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 124.89 Tm (run. This is stated explicitly rather than fabricating a result.) Tj ET
+0 0 0 rg
+BT /F2 12 Tf 1 0 0 1 50.00 102.89 Tm (Remediation \(Fixed Code\)) Tj ET
+0.96 0.96 0.965 rg
+50.00 58.89 495.28 38.00 re f
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 85.09 Tm (#[account\(init_if_needed, payer = user, space = 8 + 32 + 8,) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 75.09 Tm (          seeds = [b"contrib", fund.key\(\).as_ref\(\), user.key\(\).as_ref\(\)], bump\)]) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 65.09 Tm (pub contribution: Account<'info, Contribution>,) Tj ET
+
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 5856 >>
+stream
+0.96 0.96 0.965 rg
+50.00 723.89 495.28 68.00 re f
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 780.09 Tm (// ...) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 770.09 Tm (let c = &mut ctx.accounts.contribution;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 760.09 Tm (c.contributor = ctx.accounts.user.key\(\);) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 750.09 Tm (c.amount = c.amount.checked_add\(amount\).ok_or\(FundError::Overflow\)?;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 740.09 Tm (ctx.accounts.fund.total_raised = ctx.accounts.fund.total_raised.checked_add\(amount\).ok_or\(FundError::Ov) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 730.09 Tm (erflow\)?;) Tj ET
+0 0 0 rg
+BT /F2 14 Tf 1 0 0 1 50.00 693.89 Tm (Finding V-03 Ч No Goal or Deadline Enforcement on Withdrawal) Tj ET
+0.8 0.8 0.8 RG 0.7 w
+50.00 689.89 m 545.28 689.89 l S
+0.85 0.42 0 rg
+BT /F2 11 Tf 1 0 0 1 50.00 668.89 Tm (CVSS 7.5 \(High\) Ч CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H) Tj ET
+0 0 0 rg
+BT /F2 10 Tf 1 0 0 1 50.00 654.89 Tm (Location:  ) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 116.00 654.89 Tm (withdraw\(\) \(L48-56\)) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 641.89 Tm (Neither the funding goal nor the campaign deadline is checked before funds can leave the) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 628.89 Tm (program, allowing early withdrawal even for campaigns that never succeed.) Tj ET
+0 0 0 rg
+BT /F2 12 Tf 1 0 0 1 50.00 606.89 Tm (Vulnerable Code) Tj ET
+0.96 0.96 0.965 rg
+50.00 572.89 495.28 28.00 re f
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 589.09 Tm (// withdraw\(\) proceeds regardless of goal state or clock) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 579.09 Tm (let amount = ctx.accounts.fund.total_raised;) Tj ET
+0 0 0 rg
+BT /F2 12 Tf 1 0 0 1 50.00 552.89 Tm (PoC Execution Proof) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 536.89 Tm (Validator status: UNABLE_TO_PROVE ╖ 2026-08-16 09:01:40 UTC) Tj ET
+0.96 0.96 0.965 rg
+50.00 372.89 495.28 158.00 re f
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 519.09 Tm ($ cargo build-sbf) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 509.09 Tm (   Compiling poc v0.1.0) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 499.09 Tm (error[E0433]: failed to resolve: use of undeclared crate or module `anchor_lang`) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 489.09 Tm ( --> programs/poc/src/lib.rs:1:5) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 479.09 Tm (  |) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 469.09 Tm (1 | use anchor_lang::prelude::*;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 459.09 Tm (  |     ^^^^^^^^^^^ use of undeclared crate or module `anchor_lang`) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 449.09 Tm (  |) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 439.09 Tm (  = note: `anchor_lang` and the program crate dependencies are declared in Cargo.toml,) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 429.09 Tm (          which is not part of the submitted snippet.) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 419.09 Tm () Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 409.09 Tm (error: could not compile `poc` \(lib\) due to previous error) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 399.09 Tm () Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 389.09 Tm (note: the submitted snippet requires the full project context \(Cargo.toml,) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 379.09 Tm (      complete account structs\) to build; it cannot be compiled standalone.) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 358.89 Tm (The raw validator execution log above is shown verbatim rather than a narrated or) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 345.89 Tm (assumed proof.) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 329.89 Tm (Why not proven: the project compiled, but the automated exploit harness could not) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 316.89 Tm (demonstrate the attack path in this run.) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 300.89 Tm (Impact still valid: this does not affect the validity of the code-level finding above Ч) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 287.89 Tm (the vulnerability pattern is confirmed by static analysis regardless of PoC automation) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 274.89 Tm (status.) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 258.89 Tm (Next steps: recommend manual proof-of-concept testing on a devnet deployment with the) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 245.89 Tm (full source.) Tj ET
+0 0 0 rg
+BT /F2 12 Tf 1 0 0 1 50.00 223.89 Tm (Remediation \(Fixed Code\)) Tj ET
+0.96 0.96 0.965 rg
+50.00 189.89 495.28 28.00 re f
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 206.09 Tm (require!\(fund.total_raised >= fund.goal, FundError::GoalNotMet\);) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 196.09 Tm (require!\(Clock::get\(\)?.unix_timestamp >= fund.deadline, FundError::CampaignActive\);) Tj ET
+0 0 0 rg
+BT /F2 14 Tf 1 0 0 1 50.00 159.89 Tm (Finding V-04 Ч Checks-Effects-Interactions Violation Around Transfer) Tj ET
+0.8 0.8 0.8 RG 0.7 w
+50.00 155.89 m 545.28 155.89 l S
+0.8 0.65 0 rg
+BT /F2 11 Tf 1 0 0 1 50.00 134.89 Tm (CVSS 5.9 \(Medium\) Ч CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N) Tj ET
+0 0 0 rg
+BT /F2 10 Tf 1 0 0 1 50.00 120.89 Tm (Location:  ) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 116.00 120.89 Tm (refund\(\) \(L64-72\)) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 107.89 Tm (refund\(\) performs the lamport transfer before updating the fund state. If a later step) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 94.89 Tm (in the same instruction fails, the accounting and balance can diverge, leaving the) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 81.89 Tm (program in an inconsistent state.) Tj ET
+0 0 0 rg
+BT /F2 12 Tf 1 0 0 1 50.00 59.89 Tm (Vulnerable Code) Tj ET
+
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 2634 >>
+stream
+0.96 0.96 0.965 rg
+50.00 713.89 495.28 78.00 re f
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 780.09 Tm (pub fn refund\(ctx: Context<Refund>\) -> Result<\(\)> {) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 770.09 Tm (    // interaction happens BEFORE state is updated \(effect\)) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 760.09 Tm (    **ctx.accounts.fund.to_account_info\(\).try_borrow_mut_lamports\(\)? -= amt;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 750.09 Tm (    **ctx.accounts.user.to_account_info\(\).try_borrow_mut_lamports\(\)? += amt;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 740.09 Tm (    ctx.accounts.fund.total_raised -= amt;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 730.09 Tm (    Ok\(\(\)\)) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 720.09 Tm (}) Tj ET
+0 0 0 rg
+BT /F2 12 Tf 1 0 0 1 50.00 693.89 Tm (PoC Execution Proof) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 677.89 Tm (No validator execution record is available for this finding; a proof-of-concept was not) Tj ET
+0 0 0 rg
+BT /F1 10 Tf 1 0 0 1 50.00 664.89 Tm (run. This is stated explicitly rather than fabricating a result.) Tj ET
+0 0 0 rg
+BT /F2 12 Tf 1 0 0 1 50.00 642.89 Tm (Remediation \(Fixed Code\)) Tj ET
+0.96 0.96 0.965 rg
+50.00 538.89 495.28 98.00 re f
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 625.09 Tm (pub fn refund\(ctx: Context<Refund>\) -> Result<\(\)> {) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 615.09 Tm (    // effects first) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 605.09 Tm (    ctx.accounts.fund.total_raised = ctx.accounts.fund.total_raised.checked_sub\(amt\).ok_or\(FundError::U) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 595.09 Tm (nderflow\)?;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 585.09 Tm (    // then interaction) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 575.09 Tm (    **ctx.accounts.fund.to_account_info\(\).try_borrow_mut_lamports\(\)? -= amt;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 565.09 Tm (    **ctx.accounts.user.to_account_info\(\).try_borrow_mut_lamports\(\)? += amt;) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 555.09 Tm (    Ok\(\(\)\)) Tj ET
+0.12 0.12 0.2 rg
+BT /F3 7.8 Tf 1 0 0 1 56.00 545.09 Tm (}) Tj ET
+0.8 0.8 0.8 RG 0.7 w
+50.00 526.89 m 545.28 526.89 l S
+0.4 0.4 0.4 rg
+BT /F1 8 Tf 1 0 0 1 50.00 512.89 Tm (Disclaimer: This audit is an LLM-assisted code review, not a substitute for automated static analysis tools or) Tj ET
+0.4 0.4 0.4 rg
+BT /F1 8 Tf 1 0 0 1 50.00 501.89 Tm (manual human auditor review. It does not guarantee the absence of all vulnerabilities.) Tj ET
+
+endstream
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000143 00000 n 
+0000000240 00000 n 
+0000000342 00000 n 
+0000000437 00000 n 
+0000000589 00000 n 
+0000006326 00000 n 
+0000006478 00000 n 
+0000012864 00000 n 
+0000013018 00000 n 
+0000018927 00000 n 
+0000019081 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+21768
+%%EOF

@@ -34,6 +34,32 @@
 
 ---
 
+## 🧪 Sample Reports
+
+These are **example reports generated on synthetic test contracts** — not real client
+audits — to demonstrate the format and depth of a Hafiz Labs professional-tier report.
+The contracts are intentionally vulnerable teaching examples; no client code, names, or
+data are involved.
+
+| Sample | Domain | Findings | Format |
+|--------|--------|----------|--------|
+| [DeFi Crowdfunding](./sample-reports/sample-report-defi-crowdfunding.pdf) | Fund integrity | 2 Critical · 1 High · 1 Medium | PDF |
+| [NFT Marketplace](./sample-reports/sample-report-nft-marketplace.pdf) | Access control | 3 High | PDF |
+
+Each sample demonstrates our professional report format:
+
+- 📊 **CVSS 3.1 scoring** — every finding scored with a full base vector and severity band
+- 🩹 **Vulnerable → Fixed code diff** — the exact insecure snippet and a concrete remediation
+- 🎯 **Exploit walkthrough** — a step-by-step attack scenario for each issue
+- 🔬 **Honest PoC status** — the raw automated-validation result is shown verbatim; when an
+  exploit could not be auto-proven, we say so plainly rather than implying a proof we don't have
+- ⚖️ **Recommended Fix Order** — findings prioritized by CVSS with a suggested remediation timeframe
+
+> These samples reflect the AI-assisted, human-verified pipeline described above; they are
+> provided for demonstration and educational purposes only.
+
+---
+
 ## 🔍 Audit Methodology
 
 Our audit process covers **4 critical domains**:
