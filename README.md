@@ -105,7 +105,7 @@ Every Hafiz Labs audit report includes:
 
 ## 🚀 How to Order
 
-1. **Contact us via email: contact.hafizlabs@gmail.com (or open a GitHub Issue)
+1. Contact us via email: contact.hafizlabs@gmail.com (or open a GitHub Issue)
 2. **Share your repository** or paste your smart contract code
 3. **Choose your package** (Spot / Full / Emergency)
 4. **Pay via USDC** on Solana
