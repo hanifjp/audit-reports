@@ -130,7 +130,7 @@ Every Hafiz Labs audit report includes:
 |---------|---------|
 | 🌐 **GitHub** | [github.com/hanifjp/audit-reports](https://github.com/hanifjp/audit-reports) |
 | 💬 **Telegram** | Coming soon |
-| 📧 **Email** | Coming soon |
+| 📧 **Email** | contact.hafizlabs@gmail.com |
 
 ---
 
