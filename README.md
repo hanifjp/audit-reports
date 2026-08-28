@@ -60,6 +60,23 @@ Each sample demonstrates our professional report format:
 
 ---
 
+## 🎯 Practice Runs (Public Benchmarks)
+
+**Practice / training exercises** — we run our pipeline against **public, already-closed**
+security-contest codebases and measure the result against the contest's **published answer
+key**. These are **not** paid engagements, official contest submissions, or client audits,
+and we claim **no placement, ranking, or reward**. They exist to benchmark and improve our
+tooling in the open.
+
+| Exercise | Target | Result |
+|----------|--------|--------|
+| [SSSwap — Solana AMM](./practice-runs/ssswap-solana-amm.md) | Minimal Solana AMM · CodeHawks "First Flight" educational contest (closed mid‑2025) | Identified **4 of 5** official High-severity findings + additional lower-severity findings via the multi-layer pipeline |
+
+> Each practice run is written up with honest framing — **including findings our pipeline did
+> _not_ catch** — as a transparent record of ongoing development, not a marketing claim.
+
+---
+
 ## 🔍 Audit Methodology
 
 Our audit process covers **4 critical domains**:
