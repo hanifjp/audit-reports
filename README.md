@@ -62,15 +62,16 @@ Each sample demonstrates our professional report format:
 
 ## 🎯 Practice Runs (Public Benchmarks)
 
-**Practice / training exercises** — we run our pipeline against **public, already-closed**
-security-contest codebases and measure the result against the contest's **published answer
-key**. These are **not** paid engagements, official contest submissions, or client audits,
-and we claim **no placement, ranking, or reward**. They exist to benchmark and improve our
-tooling in the open.
+**Practice / training exercises** — we run our pipeline against **public** security-contest
+codebases and labelled vulnerability corpora, and measure the result against the **published
+answer key**. These are **not** paid engagements, official contest submissions, or client
+audits, and we claim **no placement, ranking, or reward**. They exist to benchmark and improve
+our tooling in the open.
 
 | Exercise | Target | Result |
 |----------|--------|--------|
 | [SSSwap — Solana AMM](./practice-runs/ssswap-solana-amm.md) | Minimal Solana AMM · CodeHawks "First Flight" educational contest (closed mid‑2025) | Identified **4 of 5** official High-severity findings + additional lower-severity findings via the multi-layer pipeline |
+| [Anchor Framework Security Corpus](./practice-runs/sealevel-attacks-benchmark.md) | `coral-xyz/sealevel-attacks` · Anchor team's public corpus of 11 canonical Solana/Anchor vulnerability classes (known-answer key) | **10 of 11** categories detected on the initial pass; **11 of 11** after a closed-loop lesson iteration (the one gap — account revival on close — was surfaced, learned, and re-verified) |
 
 > Each practice run is written up with honest framing — **including findings our pipeline did
 > _not_ catch** — as a transparent record of ongoing development, not a marketing claim.
