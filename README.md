@@ -25,15 +25,6 @@
 
 ---
 
-## 📋 Audit Reports
-
-| Report ID | Project | Chain | Verdict | Severity | Date |
-|-----------|---------|-------|---------|----------|------|
-| [CSA-20260711-832](./CSA-20260711-832-anchor-escrow.md) | Anchor Escrow | Solana | ⚠️ CONDITIONAL | HIGH | Jul 11, 2026 |
-| [CSA-20260711-167](./CSA-20260711-167-smart-contract-audit.md) | DeFi Security Audit | Solana | ❌ NOT SAFE | HIGH | Jul 11, 2026 |
-
----
-
 ## 🧪 Sample Reports
 
 These are **example reports generated on synthetic test contracts** — not real client
@@ -103,7 +94,7 @@ Validate correct usage of `seeds`, `bump`, `authority`, `close`, and `has_one` c
 | 🔍 **Spot Audit** | $150 USDC | 24-48 hours | Quick security check before launch |
 | 📋 **Full Audit** | $500 USDC | 3-5 days | Comprehensive audit with full report |
 | 🚨 **Emergency Audit** | $300 USDC | 6-12 hours | Urgent audit for imminent launch |
-| 💬 **Deep-Dive Consultation Report** | $75 USDC | 24-hour turnaround" |
+| 💬 **Deep-Dive Consultation Report** | $75 USDC | 24-hour turnaround | Quick technical Q&A without full audit |
 
 > 💡 **Compare:** Certik charges $50,000+. We deliver enterprise-grade quality at a fraction of the cost.
 
@@ -123,7 +114,7 @@ Every Hafiz Labs audit report includes:
 
 ## 🚀 How to Order
 
-1. Contact us via email: contact.hafizlabs@gmail.com (or open a GitHub Issue)
+1. Contact us via email: hafizlabs.audit@gmail.com (or open a GitHub Issue)
 2. **Share your repository** or paste your smart contract code
 3. **Choose your package** (Spot / Full / Emergency)
 4. **Pay via USDC** on Solana
@@ -148,7 +139,7 @@ Every Hafiz Labs audit report includes:
 |---------|---------|
 | 🌐 **GitHub** | [github.com/hanifjp/audit-reports](https://github.com/hanifjp/audit-reports) |
 | 💬 **Telegram** | Coming soon |
-| 📧 **Email** | contact.hafizlabs@gmail.com |
+| 📧 **Email** | hafizlabs.audit@gmail.com |
 
 ---
 
