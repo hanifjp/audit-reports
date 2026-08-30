@@ -3,7 +3,6 @@
 > **Multi-Layer Verification for Solana Smart Contracts**
 > Rigorous, Multi-Agent Security Analysis
 
-[![Audits](https://img.shields.io/badge/Audits-2%2B-brightgreen)](https://github.com/hanifjp/audit-reports)
 [![Chain](https://img.shields.io/badge/Chain-Solana-blue)](https://github.com/hanifjp/audit-reports)
 [![Methodology](https://img.shields.io/badge/Methodology-Multi--Layer-blue)](https://github.com/hanifjp/audit-reports)
 
