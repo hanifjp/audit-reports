@@ -1,23 +1,23 @@
 # 🛡️ Hafiz Labs — Smart Contract Audit Reports
 
-> **AI-Powered Smart Contract Security for Solana**
-> AI-Powered Security Analysis
+> **Multi-Layer Verification for Solana Smart Contracts**
+> Rigorous, Multi-Agent Security Analysis
 
 [![Audits](https://img.shields.io/badge/Audits-2%2B-brightgreen)](https://github.com/hanifjp/audit-reports)
 [![Chain](https://img.shields.io/badge/Chain-Solana-blue)](https://github.com/hanifjp/audit-reports)
-[![Powered by](https://img.shields.io/badge/Powered%20by-AI-cyan)](https://github.com/hanifjp/audit-reports)
+[![Methodology](https://img.shields.io/badge/Methodology-Multi--Layer-blue)](https://github.com/hanifjp/audit-reports)
 
 ---
 
 ## 🏢 About Hafiz Labs
 
-**Hafiz Labs** is a Web3 security firm specializing in smart contract audits for the **Solana** ecosystem. Our audits are powered by **AI** — a multi-agent system that combines deep AI analysis with human expert verification.
+**Hafiz Labs** is a Web3 security firm specializing in smart contract audits for the **Solana** ecosystem. Every audit runs through a multi-agent, multi-layer pipeline — automated analysis, execution-based validation, and an independent second-opinion review — with human expert verification of every finding before delivery.
 
 ### Why Hafiz Labs?
 
 | Feature | Details |
 |---------|---------|
-| 🤖 **AI-Powered** | Multi-agent AI system for deep code analysis |
+| 🔬 **Multi-Layer Verification** | Analysis → execution-based validation → independent second-opinion review |
 | 👁️ **Human-Verified** | Every finding reviewed by security experts |
 | ⚡ **Fast Delivery** | Spot audit in 24-48 hours, Full audit in 3-5 days |
 | 💰 **Competitive Pricing** | Enterprise quality at freelancer price |
@@ -96,7 +96,7 @@ Validate correct usage of `seeds`, `bump`, `authority`, `close`, and `has_one` c
 | 🚨 **Emergency Audit** | $300 USDC | 6-12 hours | Urgent audit for imminent launch |
 | 💬 **Deep-Dive Consultation Report** | $75 USDC | 24-hour turnaround | Quick technical Q&A without full audit |
 
-> 💡 **Compare:** Certik charges $50,000+. We deliver enterprise-grade quality at a fraction of the cost.
+> 💡 Focused exclusively on Solana/Anchor — deep specialization over broad, generic coverage.
 
 ---
 
