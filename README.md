@@ -62,6 +62,7 @@ our tooling in the open.
 |----------|--------|--------|
 | [SSSwap — Solana AMM](./practice-runs/ssswap-solana-amm.md) | Minimal Solana AMM · CodeHawks "First Flight" educational contest (closed mid‑2025) | Identified **4 of 5** official High-severity findings + additional lower-severity findings via the multi-layer pipeline |
 | [Anchor Framework Security Corpus](./practice-runs/sealevel-attacks-benchmark.md) | `coral-xyz/sealevel-attacks` · Anchor team's public corpus of 11 canonical Solana/Anchor vulnerability classes (known-answer key) | **10 of 11** categories detected on the initial pass; **11 of 11** after a closed-loop lesson iteration (the one gap — account revival on close — was surfaced, learned, and re-verified) |
+| [RustFund Re-Audit](./practice-runs/rustfund-relearning.md) | CodeHawks "Rust Fund" First Flight (closed 2025) | Reproduced **5 of 6** baseline findings + **1 new high-value finding** via a matured lesson-memory system; demonstrates continuous improvement across pipeline iterations |
 
 > Each practice run is written up with honest framing — **including findings our pipeline did
 > _not_ catch** — as a transparent record of ongoing development, not a marketing claim.
