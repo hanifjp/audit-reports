@@ -88,14 +88,20 @@ Validate correct usage of `seeds`, `bump`, `authority`, `close`, and `has_one` c
 
 ## 💼 Services & Pricing
 
-| Service | Price | Delivery | Best For |
-|---------|-------|----------|---------|
-| 🔍 **Spot Audit** | $150 USDC | 24-48 hours | Quick security check before launch |
-| 📋 **Full Audit** | $500 USDC | 3-5 days | Comprehensive audit with full report |
-| 🚨 **Emergency Audit** | $300 USDC | 6-12 hours | Urgent audit for imminent launch |
-| 💬 **Deep-Dive Consultation Report** | $75 USDC | 24-hour turnaround | Quick technical Q&A without full audit |
+| Service | Price | Delivery | Scope | Best For |
+|---------|-------|----------|-------|---------|
+| 🔍 **Spot Audit** | $150 USDC | 24-48 hours | Up to 150 lines / 1-2 files | Quick security check before launch |
+| 📋 **Full Audit** | $500 USDC | 3-5 days | Up to 500 lines / 5 files | Comprehensive audit with full report |
+| 🚨 **Emergency Audit** | $300 USDC | 6-12 hours | Up to 300 lines / 2-3 files | Urgent audit for imminent launch |
+| 💬 **Deep-Dive Consultation Report** | $75 USDC | 24-hour turnaround | Async / written — email-based Q&A, no live call required | Quick technical Q&A without full audit |
 
 > 💡 Focused exclusively on Solana/Anchor — deep specialization over broad, generic coverage.
+>
+> 🔁 **Spot & Full Audit include one free re-check** — after you apply the recommended fixes, we verify them (fix verification, not a full re-audit of new code).
+>
+> 💳 **Payment terms:** Full payment upfront via USDC before work begins.
+>
+> 📏 **Larger codebases quoted separately based on scope** — contact us for a custom quote.
 
 ---
 
@@ -114,10 +120,15 @@ Every Hafiz Labs audit report includes:
 ## 🚀 How to Order
 
 1. Contact us via email: contact.hafizlabs@gmail.com (or open a GitHub Issue)
-2. **Share your repository** or paste your smart contract code
+2. **Share your code** via one of the following:
+   - A public GitHub repo link, or
+   - A private repo (we'll provide our GitHub username to add as a collaborator upon request), or
+   - A `.zip` file of your project attached to the email
 3. **Choose your package** (Spot / Full / Emergency)
-4. **Pay via USDC** on Solana
+4. **Pay via USDC** on Solana — full payment upfront before work begins
 5. **Receive your report** within the promised timeframe
+
+> ⏱️ **We typically respond within 24 hours.**
 
 ---
 
