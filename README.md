@@ -96,6 +96,10 @@ Validate correct usage of `seeds`, `bump`, `authority`, `close`, and `has_one` c
 | 🚨 **Emergency Audit** | $300 USDC | 6-12 hours | Up to 300 lines / 2-3 files | Urgent audit for imminent launch |
 | 💬 **Deep-Dive Consultation Report** | $75 USDC | 24-hour turnaround | Async / written — email-based Q&A, no live call required | Quick technical Q&A without full audit |
 
+> 📐 **What counts toward scope:** "File" and "lines" refer to your Solana program's source code only (`.rs` files containing your program logic — e.g. `lib.rs`, `state.rs`, `instructions/*.rs`). Test files, config files (`Anchor.toml`, `Cargo.toml`), and auto-generated files (IDL, `target/`) are not counted. Both limits must be met — for example, Full Audit requires the program to be within both 500 lines AND 5 files; if either limit is exceeded, it falls outside standard scope and will need a custom quote.
+>
+> 🚫 **Full Audit scope exclusions:** Full Audit scope excludes programs with external oracle integrations, deep cross-program invocations (3+ hops), or novel cryptographic primitives — these require a custom quote regardless of line/file count, due to the additional verification work involved.
+>
 > 💡 Focused exclusively on Solana/Anchor — deep specialization over broad, generic coverage.
 >
 > 🔁 **Spot & Full Audit include one free re-check** — after you apply the recommended fixes, we verify them (fix verification, not a full re-audit of new code).
