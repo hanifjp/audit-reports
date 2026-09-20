@@ -75,19 +75,19 @@ an artifact of a cut-off run. We call this out because distinguishing "analysed 
 On the first run, the process correctly identified the intended vulnerability in **10 of the 11
 categories**, each at an appropriate Critical/High severity:
 
-| # | Category | Intended issue | Detected? | Severity |
-|---|----------|----------------|-----------|----------|
-| 1 | Signer authorization | Missing signer check | ✅ | Critical |
-| 2 | Account data matching | Stored owner/authority field not validated | ✅ | High |
-| 3 | Owner checks | Account owner not verified | ✅ | High |
-| 4 | Type cosplay | Account type / discriminator confusion | ✅ | Critical |
-| 5 | Initialization | Unchecked / arbitrary initialization | ✅ | Critical |
-| 6 | Arbitrary CPI | Unverified program invoked via CPI | ✅ | Critical |
-| 7 | Duplicate mutable accounts | Same account passed twice, unchecked | ✅ | Critical |
-| 8 | Bump seed canonicalization | Non-canonical PDA bump accepted | ✅ | Critical |
-| 9 | PDA sharing | Over-shared PDA / missing binding | ✅ | Critical |
-| 10 | Closing accounts | Account revival after close | ⚠️ *initially missed — see below* | — |
-| 11 | Sysvar address checking | Sysvar account address not validated | ✅ | Critical |
+| # | Category | Intended issue | Detected? | Severity | Detection Layer |
+|---|----------|----------------|-----------|----------|-----------------|
+| 1 | Signer authorization | Missing signer check | ✅ | Critical | L1 |
+| 2 | Account data matching | Stored owner/authority field not validated | ✅ | High | L1 |
+| 3 | Owner checks | Account owner not verified | ✅ | High | L1 |
+| 4 | Type cosplay | Account type / discriminator confusion | ✅ | Critical | L1 |
+| 5 | Initialization | Unchecked / arbitrary initialization | ✅ | Critical | L1 |
+| 6 | Arbitrary CPI | Unverified program invoked via CPI | ✅ | Critical | L1 |
+| 7 | Duplicate mutable accounts | Same account passed twice, unchecked | ✅ | Critical | L1 |
+| 8 | Bump seed canonicalization | Non-canonical PDA bump accepted | ✅ | Critical | L1 |
+| 9 | PDA sharing | Over-shared PDA / missing binding | ✅ | Critical | L1 |
+| 10 | Closing accounts | Account revival after close | ⚠️ *initially missed — see below* | — | L1 (re-run w/ Mem0 lesson) |
+| 11 | Sysvar address checking | Sysvar account address not validated | ✅ | Critical | L1 |
 
 ### The one gap — account closing
 
@@ -129,6 +129,27 @@ The sequence matters, and we state it plainly:
 This is **not** a claim of "11 / 11 from the first run." It is a demonstration of **closed-loop
 improvement**: the system surfaced a gap about its own coverage, learned from it, and verified the
 fix on the exact case it had missed.
+
+## Fuzzing Layer (Layer 4) — partial coverage
+
+Beyond the three-stage review pipeline above, we exercised a **fourth, execution-driven layer**:
+coverage-guided **fuzzing** of the vulnerability against a live SVM. We report it honestly as
+**partial coverage** — it currently spans a single category, not the full corpus.
+
+- **Fuzzer:** Trident v0.12 (Solana/Anchor fuzzing framework).
+- **Categories fuzz-tested: 1 of 11** — *Bump Seed Canonicalization* (category #8). The remaining
+  **10 categories have not yet had fuzz harnesses authored**; extending Trident coverage to them is
+  **future work**. This layer is explicitly **not** full-corpus coverage.
+- **Iterations:** `fuzz(1000, 100)` — 1,000 iterations × 100 flows ≈ **100,000 executions**.
+- **Confirmed — 1 finding.** Driving a non-canonical (fake) PDA bump against both variants:
+  - the **insecure** variant **accepted the non-canonical bump in 992 / 1000** cases — the
+    vulnerability fires: a fake bump is wrongly honored and drives the program to an alternate PDA;
+  - the **secure** variant accepted it in **0 / 1000** cases — clean: every non-canonical bump was
+    correctly rejected.
+
+  This independently **confirms by execution** the same invariant the Stage-1 static pass flagged
+  for category #8: the insecure program is drivable to an alternate PDA via a fake bump, the secure
+  program is not.
 
 ## Limitations & honest disclosure
 
