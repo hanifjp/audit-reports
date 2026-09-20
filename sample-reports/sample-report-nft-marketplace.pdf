@@ -4,7 +4,7 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [ 6 0 R 8 0 R 10 0 R ] /Count 3 >>
+<< /Type /Pages /Kids [ 6 0 R 8 0 R 10 0 R 12 0 R ] /Count 4 >>
 endobj
 3 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
@@ -19,124 +19,61 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
 endobj
 7 0 obj
-<< /Length 5414 >>
+<< /Length 4628 >>
 stream
-0 0 0 rg
-BT /F2 20 Tf 1 0 0 1 50.00 771.89 Tm (Security Audit Report — Hafiz Labs) Tj ET
-0 0 0 rg
-BT /F2 10 Tf 1 0 0 1 50.00 751.89 Tm (Report ID:  ) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 122.00 751.89 Tm (AUD-1786800002) Tj ET
-0 0 0 rg
-BT /F2 10 Tf 1 0 0 1 50.00 738.89 Tm (Project:  ) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 110.00 738.89 Tm (NFT Marketplace — Sample Listing Program) Tj ET
-0 0 0 rg
-BT /F2 10 Tf 1 0 0 1 50.00 725.89 Tm (Client:  ) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 104.00 725.89 Tm (Demonstration \(synthetic contract\)) Tj ET
-0 0 0 rg
-BT /F2 10 Tf 1 0 0 1 50.00 712.89 Tm (Date:  ) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 92.00 712.89 Tm (2026-08-15) Tj ET
-0 0 0 rg
-BT /F2 10 Tf 1 0 0 1 50.00 699.89 Tm (Verdict:  ) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 110.00 699.89 Tm (NOT SAFE | Risk: HIGH) Tj ET
-0 0 0 rg
-BT /F2 10 Tf 1 0 0 1 50.00 686.89 Tm (Overall CVSS:  ) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 140.00 686.89 Tm (8.4 \(High\)) Tj ET
-0 0 0 rg
-BT /F2 10 Tf 1 0 0 1 50.00 673.89 Tm (Findings:  ) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 116.00 673.89 Tm (3 — Critical 0, High 3, Medium 0, Low 0) Tj ET
-0 0 0 rg
-BT /F2 14 Tf 1 0 0 1 50.00 646.89 Tm (Executive Summary) Tj ET
-0.8 0.8 0.8 RG 0.7 w
-50.00 642.89 m 545.28 642.89 l S
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 622.89 Tm (This sample NFT marketplace program lists, updates and settles NFT sales. The review) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 609.89 Tm (found broken access control across the write paths: listing updates verify no authority,) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 596.89 Tm (the sale path does not confirm the seller as a signer, and settlement trusts a) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 583.89 Tm (client-supplied price argument instead of the on-chain listing. Any of these lets an) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 570.89 Tm (attacker alter listings they do not own or redirect/underpay funds during a sale.) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 557.89 Tm (Remediation centers on enforcing signer and ownership constraints and sourcing all) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 544.89 Tm (trusted values \(price, seller\) from validated on-chain accounts rather than instruction) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 531.89 Tm (arguments.) Tj ET
-0 0 0 rg
-BT /F2 14 Tf 1 0 0 1 50.00 505.89 Tm (Recommended Fix Order) Tj ET
-0.8 0.8 0.8 RG 0.7 w
-50.00 501.89 m 545.28 501.89 l S
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 481.89 Tm (1. [High] Missing Signer / Ownership Check on update_listing -> Fix within 3-5 days) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 468.89 Tm (2. [High] Payment Amount Trusts Client-Supplied Argument -> Fix within 3-5 days) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 455.89 Tm (3. [High] Missing State Validation on Sale \(inactive/expired listings\) -> Fix within 3-5) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 442.89 Tm (days) Tj ET
-0 0 0 rg
-BT /F2 12 Tf 1 0 0 1 50.00 420.89 Tm (Scope) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 404.89 Tm (programs/marketplace/src/lib.rs \(list, update_listing, buy\)) Tj ET
-0 0 0 rg
-BT /F2 14 Tf 1 0 0 1 50.00 378.89 Tm (Finding V-01 — Missing Signer / Ownership Check on update_listing) Tj ET
-0.8 0.8 0.8 RG 0.7 w
-50.00 374.89 m 545.28 374.89 l S
-0.85 0.42 0 rg
-BT /F2 11 Tf 1 0 0 1 50.00 353.89 Tm (CVSS 8.2 \(High\) — CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N) Tj ET
-0 0 0 rg
-BT /F2 10 Tf 1 0 0 1 50.00 339.89 Tm (Location:  ) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 116.00 339.89 Tm (update_listing\(\) \(L52-60\)) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 326.89 Tm (update_listing\(\) mutates the listing price without confirming that the caller is a) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 313.89 Tm (signer or the listing owner, so any account can rewrite any listing.) Tj ET
-0 0 0 rg
-BT /F2 12 Tf 1 0 0 1 50.00 291.89 Tm (Vulnerable Code) Tj ET
-0.96 0.96 0.965 rg
-50.00 237.89 495.28 48.00 re f
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 274.09 Tm (pub fn update_listing\(ctx: Context<UpdateListing>, new_price: u64\) -> Result<\(\)> {) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 264.09 Tm (    ctx.accounts.listing.price = new_price; // no signer / owner check) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 254.09 Tm (    Ok\(\(\)\)) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 244.09 Tm (}) Tj ET
-0 0 0 rg
-BT /F2 12 Tf 1 0 0 1 50.00 217.89 Tm (Exploit Walkthrough) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 201.89 Tm (Attack Steps:) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 185.89 Tm (1. Attacker passes a victim's listing account to update_listing\(\).) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 169.89 Tm (2. Sets new_price to 1 lamport.) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 153.89 Tm (3. Immediately buys the NFT far below market value.) Tj ET
-0 0 0 rg
-BT /F2 12 Tf 1 0 0 1 50.00 131.89 Tm (PoC Execution Proof) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 115.89 Tm (Validator status: INCOMPLETE_SOURCE · 2026-08-16 09:05:48 UTC) Tj ET
-0.96 0.96 0.965 rg
-50.00 61.89 495.28 48.00 re f
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 98.09 Tm ($ cargo build-sbf) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 88.09 Tm (   Compiling poc v0.1.0) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 78.09 Tm (error[E0433]: failed to resolve: use of undeclared crate or module `anchor_lang`) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 68.09 Tm ( --> programs/poc/src/lib.rs:1:5) Tj ET
+BT /F2 22 Tf 0 0 0 rg 56 767.89 Td (Security Audit Report — Hafiz Labs) Tj ET
+BT /F2 10 Tf 0 0 0 rg 56 749.89 Td (Report ID:) Tj ET
+BT /F1 10 Tf 0 0 0 rg 109.62065 749.89 Td (AUD-1786800002) Tj ET
+BT /F2 10 Tf 0 0 0 rg 56 736.69 Td (Project:) Tj ET
+BT /F1 10 Tf 0 0 0 rg 97.4255 736.69 Td (NFT Marketplace — Sample Listing Program) Tj ET
+BT /F2 10 Tf 0 0 0 rg 56 723.49 Td (Client:) Tj ET
+BT /F1 10 Tf 0 0 0 rg 91.6153 723.49 Td (Demonstration \(synthetic contract\)) Tj ET
+BT /F2 10 Tf 0 0 0 rg 56 710.29 Td (Date:) Tj ET
+BT /F1 10 Tf 0 0 0 rg 86.9755 710.29 Td (2026-08-15) Tj ET
+BT /F2 10 Tf 0 0 0 rg 56 697.09 Td (Verdict:) Tj ET
+BT /F1 10 Tf 0 0 0 rg 97.4255 697.09 Td (NOT SAFE | Risk: HIGH) Tj ET
+BT /F2 10 Tf 0 0 0 rg 56 683.89 Td (Overall CVSS:) Tj ET
+BT /F1 10 Tf 0 0 0 rg 129.3607 683.89 Td (8.4 \(High\)) Tj ET
+BT /F2 10 Tf 0 0 0 rg 56 670.69 Td (Findings:) Tj ET
+BT /F1 10 Tf 0 0 0 rg 104.39565 670.69 Td (3 — Critical 0, High 3, Medium 0, Low 0) Tj ET
+BT /F2 15 Tf 0 0 0 rg 56 644.49 Td (Executive Summary) Tj ET
+0.70 0.70 0.70 RG 0.70 w 56.00 644.49 m 539.28 644.49 l S
+BT /F1 10 Tf 0 0 0 rg 56 622.49 Td (This sample NFT marketplace program lists, updates and settles NFT sales. The review found broken) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 609.09 Td (access control and input-trust issues across the write paths: listing updates do not verify signer/ownership) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 595.69 Td (authority, the sale path does not validate that the listing is still active and escrowed, and settlement trusts a) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 582.29 Td (client-supplied price argument instead of the on-chain listing. Any of these lets an attacker alter listings they) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 568.89 Td (do not own, transact against stale or cancelled listings, or underpay during a sale. Remediation centers on) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 555.49 Td (enforcing signer and ownership constraints and sourcing all trusted values \(price, listing status\) from) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 542.09 Td (validated on-chain accounts rather than instruction arguments.) Tj ET
+BT /F2 15 Tf 0 0 0 rg 56 512.69 Td (Recommended Fix Order) Tj ET
+0.70 0.70 0.70 RG 0.70 w 56.00 512.69 m 539.28 512.69 l S
+BT /F1 10 Tf 0 0 0 rg 56 490.69 Td (1. [High] Missing Signer / Ownership Check on update_listing -> Fix within 3-5 days) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 474.29 Td (2. [High] Missing State Validation on Sale \(inactive/expired listings\) -> Fix within 3-5 days) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 457.89 Td (3. [High] Payment Amount Trusts Client-Supplied Argument -> Fix within 3-5 days) Tj ET
+BT /F2 15 Tf 0 0 0 rg 56 428.49 Td (Scope) Tj ET
+0.70 0.70 0.70 RG 0.70 w 56.00 428.49 m 539.28 428.49 l S
+BT /F1 10 Tf 0 0 0 rg 56 406.49 Td (programs/marketplace/src/lib.rs \(list, update_listing, buy\)) Tj ET
+BT /F2 15 Tf 0 0 0 rg 56 377.09 Td (Finding V-01 — Missing Signer / Ownership Check on update_listing) Tj ET
+0.70 0.70 0.70 RG 0.70 w 56.00 377.09 m 539.28 377.09 l S
+BT /F2 10.5 Tf 0.86 0.42 0.05 rg 56 354.59 Td (CVSS 8.2 \(High\) — CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N) Tj ET
+BT /F2 10 Tf 0 0 0 rg 56 340.59 Td (Location:) Tj ET
+BT /F1 10 Tf 0 0 0 rg 104.4061 340.59 Td (update_listing\(\) \(L52-60\)) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 327.09 Td (update_listing\(\) mutates the listing price without confirming that the caller is a signer or the listing owner, so) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 313.69 Td (any account can rewrite any listing.) Tj ET
+BT /F2 11.5 Tf 0 0 0 rg 56 289.79 Td (Vulnerable Code) Tj ET
+0.955 0.955 0.955 rg 56.00 218.29 483.28 67.00 re f
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 270.79 Td (pub fn update_listing\(ctx: Context<UpdateListing>, new_price: u64\) -> Result<\(\)> {) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 259.79 Td (    ctx.accounts.listing.price = new_price; // no signer / owner check) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 248.79 Td (    Ok\(\(\)\)) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 237.79 Td (}) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 226.79 Td () Tj ET
+BT /F2 11.5 Tf 0 0 0 rg 56 194.79 Td (Exploit Walkthrough) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 180.29 Td (Attack Steps:) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 163.89 Td (1. Attacker passes a victim's listing account to update_listing\(\).) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 147.49 Td (2. Sets new_price to 1 lamport.) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 131.09 Td (3. Immediately buys the NFT far below market value.) Tj ET
+BT /F2 11.5 Tf 0 0 0 rg 56 107.19 Td (PoC Execution Proof) Tj ET
+BT /F1 9.5 Tf 0.25 0.25 0.25 rg 56 93.1899999999999 Td (Validator status: INCOMPLETE_SOURCE · 2026-08-16 09:05:48 UTC) Tj ET
 
 endstream
 endobj
@@ -144,124 +81,60 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 9 0 R >>
 endobj
 9 0 obj
-<< /Length 5779 >>
+<< /Length 4638 >>
 stream
-0.96 0.96 0.965 rg
-50.00 673.89 495.28 118.00 re f
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 780.09 Tm (  |) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 770.09 Tm (1 | use anchor_lang::prelude::*;) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 760.09 Tm (  |     ^^^^^^^^^^^ use of undeclared crate or module `anchor_lang`) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 750.09 Tm (  |) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 740.09 Tm (  = note: `anchor_lang` and the program crate dependencies are declared in Cargo.toml,) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 730.09 Tm (          which is not part of the submitted snippet.) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 720.09 Tm () Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 710.09 Tm (error: could not compile `poc` \(lib\) due to previous error) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 700.09 Tm () Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 690.09 Tm (note: the submitted snippet requires the full project context \(Cargo.toml,) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 680.09 Tm (      complete account structs\) to build; it cannot be compiled standalone.) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 659.89 Tm (The raw validator execution log above is shown verbatim rather than a narrated or) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 646.89 Tm (assumed proof.) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 630.89 Tm (Why not proven: automated build requires the full project context \(Cargo.toml, complete) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 617.89 Tm (account structs\); the submitted snippet alone cannot be compiled standalone.) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 601.89 Tm (Impact still valid: this does not affect the validity of the code-level finding above —) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 588.89 Tm (the vulnerability pattern is confirmed by static analysis regardless of PoC automation) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 575.89 Tm (status.) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 559.89 Tm (Next steps: recommend manual proof-of-concept testing on a devnet deployment with the) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 546.89 Tm (full source.) Tj ET
-0 0 0 rg
-BT /F2 12 Tf 1 0 0 1 50.00 524.89 Tm (Remediation \(Fixed Code\)) Tj ET
-0.96 0.96 0.965 rg
-50.00 450.89 495.28 68.00 re f
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 507.09 Tm (#[account\(mut, has_one = owner\)]) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 497.09 Tm (pub listing: Account<'info, Listing>,) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 487.09 Tm (pub owner: Signer<'info>,) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 477.09 Tm (// ...) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 467.09 Tm (require!\(new_price > 0, MarketError::InvalidPrice\);) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 457.09 Tm (ctx.accounts.listing.price = new_price;) Tj ET
-0 0 0 rg
-BT /F2 14 Tf 1 0 0 1 50.00 420.89 Tm (Finding V-02 — Missing State Validation on Sale \(inactive/expired listings\)) Tj ET
-0.8 0.8 0.8 RG 0.7 w
-50.00 416.89 m 545.28 416.89 l S
-0.85 0.42 0 rg
-BT /F2 11 Tf 1 0 0 1 50.00 395.89 Tm (CVSS 7.6 \(High\) — CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L) Tj ET
-0 0 0 rg
-BT /F2 10 Tf 1 0 0 1 50.00 381.89 Tm (Location:  ) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 116.00 381.89 Tm (buy\(\) \(L68-84\)) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 368.89 Tm (buy\(\) does not verify the listing is active or that the NFT is still escrowed, allowing) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 355.89 Tm (purchases against cancelled or already-settled listings.) Tj ET
-0 0 0 rg
-BT /F2 12 Tf 1 0 0 1 50.00 333.89 Tm (Vulnerable Code) Tj ET
-0.96 0.96 0.965 rg
-50.00 269.89 495.28 58.00 re f
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 316.09 Tm (pub fn buy\(ctx: Context<Buy>\) -> Result<\(\)> {) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 306.09 Tm (    // no check on listing.status / escrow ownership) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 296.09 Tm (    settle\(ctx\)?;) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 286.09 Tm (    Ok\(\(\)\)) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 276.09 Tm (}) Tj ET
-0 0 0 rg
-BT /F2 12 Tf 1 0 0 1 50.00 249.89 Tm (PoC Execution Proof) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 233.89 Tm (No validator execution record is available for this finding; a proof-of-concept was not) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 220.89 Tm (run. This is stated explicitly rather than fabricating a result.) Tj ET
-0 0 0 rg
-BT /F2 12 Tf 1 0 0 1 50.00 198.89 Tm (Remediation \(Fixed Code\)) Tj ET
-0.96 0.96 0.965 rg
-50.00 154.89 495.28 38.00 re f
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 181.09 Tm (require!\(ctx.accounts.listing.status == ListingStatus::Active, MarketError::NotActive\);) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 171.09 Tm (require_keys_eq!\(ctx.accounts.escrow.owner, crate::ID, MarketError::BadEscrow\);) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 161.09 Tm (settle\(ctx\)?;) Tj ET
-0 0 0 rg
-BT /F2 14 Tf 1 0 0 1 50.00 124.89 Tm (Finding V-03 — Payment Amount Trusts Client-Supplied Argument) Tj ET
-0.8 0.8 0.8 RG 0.7 w
-50.00 120.89 m 545.28 120.89 l S
-0.85 0.42 0 rg
-BT /F2 11 Tf 1 0 0 1 50.00 99.89 Tm (CVSS 8.1 \(High\) — CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N) Tj ET
-0 0 0 rg
-BT /F2 10 Tf 1 0 0 1 50.00 85.89 Tm (Location:  ) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 116.00 85.89 Tm (buy\(\) \(L74-80\)) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 72.89 Tm (The transfer uses a price passed in as an instruction argument rather than the price) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 59.89 Tm (stored on the listing account, so a buyer can pay an arbitrary \(lower\) amount.) Tj ET
+0.955 0.955 0.955 rg 56.00 623.89 483.28 166.00 re f
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 775.39 Td ($ cargo build-sbf) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 764.39 Td (  Compiling poc v0.1.0) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 753.39 Td (error[E0433]: failed to resolve: use of undeclared crate or module `anchor_lang`) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 742.39 Td ( --> programs/poc/src/lib.rs:1:5) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 731.39 Td (  |) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 720.39 Td (1 | use anchor_lang::prelude::*;) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 709.39 Td (  |     ^^^^^^^^^^^ use of undeclared crate or module `anchor_lang`) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 698.39 Td (  |) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 687.39 Td (  = note: `anchor_lang` and the program crate dependencies are declared in Cargo.toml,) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 676.39 Td (    which is not part of the submitted snippet.) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 665.39 Td (error: could not compile `poc` \(lib\) due to previous error) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 654.39 Td (note: the submitted snippet requires the full project context \(Cargo.toml,) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 643.39 Td (    complete account structs\) to build; it cannot be compiled standalone.) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 632.39 Td () Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 607.89 Td (We reproduce the validator log above unedited instead of paraphrasing or asserting a result we did not) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 594.49 Td (observe.) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 578.09 Td (Why not proven: automated build requires the full project context \(Cargo.toml, complete account structs\); the) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 564.69 Td (submitted snippet alone cannot be compiled standalone.) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 548.29 Td (Validity unchanged: the automation outcome has no bearing on the finding itself, which is established by) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 534.89 Td (static review of the code path shown above.) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 518.49 Td (Recommended follow-up: reproduce the exploit manually against a devnet build using the complete project) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 505.09 Td (sources.) Tj ET
+BT /F2 11.5 Tf 0 0 0 rg 56 481.19 Td (Remediation \(Fixed Code\)) Tj ET
+0.955 0.955 0.955 rg 56.00 387.69 483.28 89.00 re f
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 462.19 Td (#[account\(mut, has_one = owner\)]) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 451.19 Td (pub listing: Account<'info, Listing>,) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 440.19 Td (pub owner: Signer<'info>,) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 429.19 Td (// ...) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 418.19 Td (require!\(new_price > 0, MarketError::InvalidPrice\);) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 407.19 Td (ctx.accounts.listing.price = new_price;) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 396.19 Td () Tj ET
+BT /F2 15 Tf 0 0 0 rg 56 358.69 Td (Finding V-02 — Missing State Validation on Sale \(inactive/expired) Tj ET
+BT /F2 15 Tf 0 0 0 rg 56 340.69 Td (listings\)) Tj ET
+0.70 0.70 0.70 RG 0.70 w 56.00 340.69 m 539.28 340.69 l S
+BT /F2 10.5 Tf 0.86 0.42 0.05 rg 56 318.19 Td (CVSS 7.6 \(High\) — CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L) Tj ET
+BT /F2 10 Tf 0 0 0 rg 56 304.19 Td (Location:) Tj ET
+BT /F1 10 Tf 0 0 0 rg 104.4061 304.19 Td (buy\(\) \(L68-84\)) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 290.69 Td (buy\(\) does not verify the listing is active or that the NFT is still escrowed, allowing purchases against) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 277.29 Td (cancelled or already-settled listings.) Tj ET
+BT /F2 11.5 Tf 0 0 0 rg 56 253.39 Td (Vulnerable Code) Tj ET
+0.955 0.955 0.955 rg 56.00 170.89 483.28 78.00 re f
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 234.39 Td (pub fn buy\(ctx: Context<Buy>\) -> Result<\(\)> {) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 223.39 Td (    // no check on listing.status / escrow ownership) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 212.39 Td (    settle\(ctx\)?;) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 201.39 Td (    Ok\(\(\)\)) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 190.39 Td (}) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 179.39 Td () Tj ET
+BT /F2 11.5 Tf 0 0 0 rg 56 147.39 Td (PoC Execution Proof) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 132.89 Td (No proof-of-concept was executed for this issue and no validator log exists; we note that directly rather than) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 119.49 Td (presenting an unproven result as fact.) Tj ET
+BT /F2 11.5 Tf 0 0 0 rg 56 95.5900000000002 Td (Remediation \(Fixed Code\)) Tj ET
 
 endstream
 endobj
@@ -269,127 +142,100 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 11 0 R >>
 endobj
 11 0 obj
-<< /Length 4947 >>
+<< /Length 4622 >>
 stream
-0 0 0 rg
-BT /F2 12 Tf 1 0 0 1 50.00 775.89 Tm (Vulnerable Code) Tj ET
-0.96 0.96 0.965 rg
-50.00 711.89 495.28 58.00 re f
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 758.09 Tm (pub fn buy\(ctx: Context<Buy>, price: u64\) -> Result<\(\)> {) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 748.09 Tm (    // trusts caller-supplied price instead of listing.price) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 738.09 Tm (    transfer_lamports\(&ctx, price\)?;) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 728.09 Tm (    Ok\(\(\)\)) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 718.09 Tm (}) Tj ET
-0 0 0 rg
-BT /F2 12 Tf 1 0 0 1 50.00 691.89 Tm (Exploit Walkthrough) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 675.89 Tm (Attack Steps:) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 659.89 Tm (1. Attacker calls buy\(\) with price = 1.) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 643.89 Tm (2. Program transfers only 1 lamport to the seller.) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 627.89 Tm (3. Attacker receives the NFT for effectively nothing.) Tj ET
-0 0 0 rg
-BT /F2 12 Tf 1 0 0 1 50.00 605.89 Tm (PoC Execution Proof) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 589.89 Tm (Validator status: UNABLE_TO_PROVE · 2026-08-16 09:06:39 UTC) Tj ET
-0.96 0.96 0.965 rg
-50.00 425.89 495.28 158.00 re f
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 572.09 Tm ($ cargo build-sbf) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 562.09 Tm (   Compiling poc v0.1.0) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 552.09 Tm (error[E0433]: failed to resolve: use of undeclared crate or module `anchor_lang`) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 542.09 Tm ( --> programs/poc/src/lib.rs:1:5) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 532.09 Tm (  |) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 522.09 Tm (1 | use anchor_lang::prelude::*;) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 512.09 Tm (  |     ^^^^^^^^^^^ use of undeclared crate or module `anchor_lang`) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 502.09 Tm (  |) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 492.09 Tm (  = note: `anchor_lang` and the program crate dependencies are declared in Cargo.toml,) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 482.09 Tm (          which is not part of the submitted snippet.) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 472.09 Tm () Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 462.09 Tm (error: could not compile `poc` \(lib\) due to previous error) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 452.09 Tm () Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 442.09 Tm (note: the submitted snippet requires the full project context \(Cargo.toml,) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 432.09 Tm (      complete account structs\) to build; it cannot be compiled standalone.) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 411.89 Tm (The raw validator execution log above is shown verbatim rather than a narrated or) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 398.89 Tm (assumed proof.) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 382.89 Tm (Why not proven: the project compiled, but the automated exploit harness could not) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 369.89 Tm (demonstrate the attack path in this run.) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 353.89 Tm (Impact still valid: this does not affect the validity of the code-level finding above —) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 340.89 Tm (the vulnerability pattern is confirmed by static analysis regardless of PoC automation) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 327.89 Tm (status.) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 311.89 Tm (Next steps: recommend manual proof-of-concept testing on a devnet deployment with the) Tj ET
-0 0 0 rg
-BT /F1 10 Tf 1 0 0 1 50.00 298.89 Tm (full source.) Tj ET
-0 0 0 rg
-BT /F2 12 Tf 1 0 0 1 50.00 276.89 Tm (Remediation \(Fixed Code\)) Tj ET
-0.96 0.96 0.965 rg
-50.00 202.89 495.28 68.00 re f
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 259.09 Tm (pub fn buy\(ctx: Context<Buy>\) -> Result<\(\)> {) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 249.09 Tm (    // authoritative price from validated on-chain account) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 239.09 Tm (    let price = ctx.accounts.listing.price;) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 229.09 Tm (    transfer_lamports\(&ctx, price\)?;) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 219.09 Tm (    Ok\(\(\)\)) Tj ET
-0.12 0.12 0.2 rg
-BT /F3 7.8 Tf 1 0 0 1 56.00 209.09 Tm (}) Tj ET
-0.8 0.8 0.8 RG 0.7 w
-50.00 190.89 m 545.28 190.89 l S
-0.4 0.4 0.4 rg
-BT /F1 8 Tf 1 0 0 1 50.00 176.89 Tm (Disclaimer: This audit is an LLM-assisted code review, not a substitute for automated static analysis tools or) Tj ET
-0.4 0.4 0.4 rg
-BT /F1 8 Tf 1 0 0 1 50.00 165.89 Tm (manual human auditor review. It does not guarantee the absence of all vulnerabilities.) Tj ET
+0.955 0.955 0.955 rg 56.00 733.89 483.28 56.00 re f
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 775.39 Td (require!\(ctx.accounts.listing.status == ListingStatus::Active, MarketError::NotActive\);) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 764.39 Td (require_keys_eq!\(ctx.accounts.escrow.owner, crate::ID, MarketError::BadEscrow\);) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 753.39 Td (settle\(ctx\)?;) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 742.39 Td () Tj ET
+BT /F2 15 Tf 0 0 0 rg 56 704.89 Td (Finding V-03 — Payment Amount Trusts Client-Supplied Argument) Tj ET
+0.70 0.70 0.70 RG 0.70 w 56.00 704.89 m 539.28 704.89 l S
+BT /F2 10.5 Tf 0.86 0.42 0.05 rg 56 682.39 Td (CVSS 8.1 \(High\) — CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N) Tj ET
+BT /F2 10 Tf 0 0 0 rg 56 668.39 Td (Location:) Tj ET
+BT /F1 10 Tf 0 0 0 rg 104.4061 668.39 Td (buy\(\) \(L74-80\)) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 654.89 Td (The transfer uses a price passed in as an instruction argument rather than the price stored on the listing) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 641.49 Td (account, so a buyer can pay an arbitrary \(lower\) amount.) Tj ET
+BT /F2 11.5 Tf 0 0 0 rg 56 617.59 Td (Vulnerable Code) Tj ET
+0.955 0.955 0.955 rg 56.00 535.09 483.28 78.00 re f
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 598.59 Td (pub fn buy\(ctx: Context<Buy>, price: u64\) -> Result<\(\)> {) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 587.59 Td (    // trusts caller-supplied price instead of listing.price) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 576.59 Td (    transfer_lamports\(&ctx, price\)?;) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 565.59 Td (    Ok\(\(\)\)) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 554.59 Td (}) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 543.59 Td () Tj ET
+BT /F2 11.5 Tf 0 0 0 rg 56 511.59 Td (Exploit Walkthrough) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 497.09 Td (Attack Steps:) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 480.69 Td (1. Attacker calls buy\(\) with price = 1.) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 464.29 Td (2. Program transfers only 1 lamport to the seller.) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 447.89 Td (3. Attacker receives the NFT for effectively nothing.) Tj ET
+BT /F2 11.5 Tf 0 0 0 rg 56 423.99 Td (PoC Execution Proof) Tj ET
+BT /F1 9.5 Tf 0.25 0.25 0.25 rg 56 409.99 Td (Validator status: UNABLE_TO_PROVE · 2026-08-16 09:06:39 UTC) Tj ET
+0.955 0.955 0.955 rg 56.00 238.67 483.28 166.00 re f
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 390.165 Td ($ cargo build-sbf) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 379.165 Td (  Compiling poc v0.1.0) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 368.165 Td (error[E0433]: failed to resolve: use of undeclared crate or module `anchor_lang`) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 357.165 Td ( --> programs/poc/src/lib.rs:1:5) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 346.165 Td (  |) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 335.165 Td (1 | use anchor_lang::prelude::*;) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 324.165 Td (  |     ^^^^^^^^^^^ use of undeclared crate or module `anchor_lang`) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 313.165 Td (  |) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 302.165 Td (  = note: `anchor_lang` and the program crate dependencies are declared in Cargo.toml,) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 291.165 Td (    which is not part of the submitted snippet.) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 280.165 Td (error: could not compile `poc` \(lib\) due to previous error) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 269.165 Td (note: the submitted snippet requires the full project context \(Cargo.toml,) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 258.165 Td (    complete account structs\) to build; it cannot be compiled standalone.) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 247.165 Td () Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 222.665 Td (Rather than summarize or imply an outcome, the exact validator output is quoted above exactly as it was) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 209.265 Td (produced.) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 192.865 Td (Why not proven: the project compiled, but the automated exploit harness could not demonstrate the attack) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 179.465 Td (path in this run.) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 163.065 Td (The finding stands: PoC automation status aside, the issue is confirmed by direct source analysis of the code) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 149.665 Td (above.) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 133.265 Td (Suggested next step: a hands-on proof-of-concept on devnet with the full codebase to demonstrate the path) Tj ET
+BT /F1 10 Tf 0 0 0 rg 56 119.865 Td (end to end.) Tj ET
+BT /F2 11.5 Tf 0 0 0 rg 56 95.9650000000001 Td (Remediation \(Fixed Code\)) Tj ET
+
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 995 >>
+stream
+0.955 0.955 0.955 rg 56.00 700.89 483.28 89.00 re f
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 775.39 Td (pub fn buy\(ctx: Context<Buy>\) -> Result<\(\)> {) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 764.39 Td (    // authoritative price from validated on-chain account) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 753.39 Td (    let price = ctx.accounts.listing.price;) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 742.39 Td (    transfer_lamports\(&ctx, price\)?;) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 731.39 Td (    Ok\(\(\)\)) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 720.39 Td (}) Tj ET
+BT /F3 8.5 Tf 0.10 0.10 0.10 rg 62 709.39 Td () Tj ET
+0.80 0.80 0.80 RG 0.60 w 56.00 682.89 m 539.28 682.89 l S
+BT /F1 8.5 Tf 0.45 0.45 0.45 rg 56 668.39 Td (Disclaimer: This audit is an LLM-assisted code review, not a substitute for automated static analysis tools or manual human) Tj ET
+BT /F1 8.5 Tf 0.45 0.45 0.45 rg 56 656.89 Td (auditor review. It does not guarantee the absence of all vulnerabilities.) Tj ET
 
 endstream
 endobj
 xref
-0 12
+0 14
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000136 00000 n 
-0000000233 00000 n 
-0000000335 00000 n 
-0000000430 00000 n 
-0000000582 00000 n 
-0000006048 00000 n 
-0000006200 00000 n 
-0000012031 00000 n 
-0000012185 00000 n 
+0000000143 00000 n 
+0000000240 00000 n 
+0000000342 00000 n 
+0000000437 00000 n 
+0000000589 00000 n 
+0000005269 00000 n 
+0000005421 00000 n 
+0000010111 00000 n 
+0000010265 00000 n 
+0000014940 00000 n 
+0000015094 00000 n 
 trailer
-<< /Size 12 /Root 1 0 R >>
+<< /Size 14 /Root 1 0 R >>
 startxref
-17185
+16141
 %%EOF
